@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FALSE	.\tableGen.c	12;"	d	file:
+OPTION_MEM_COPY	.\tableGen.c	/^    int OPTION_MEM_COPY;$/;"	m	struct:__anon1	file:
+TABLE_OPT	.\tableGen.c	/^static tableOpt TABLE_OPT;$/;"	v	file:
+TBL_CONFIG_MEM_COPY	.\tableGen.h	/^    TBL_CONFIG_MEM_COPY$/;"	e	enum:__anon2
+TBL_CONFIG_WIDTH	.\tableGen.h	/^    TBL_CONFIG_WIDTH = 0,$/;"	e	enum:__anon2
+TBL_OPTION	.\tableGen.h	/^} TBL_OPTION;$/;"	t	typeref:enum:__anon2
+TBL_OPTION_CLOS	.\tableGen.h	/^    TBL_OPTION_CLOS = 0,$/;"	e	enum:__anon2
+TBL_OPTION_OPEN	.\tableGen.h	/^    TBL_OPTION_OPEN = 1,$/;"	e	enum:__anon2
+TRUE	.\tableGen.c	11;"	d	file:
+_TABLE_GEN_	.\tableGen.h	4;"	d
+colWidth	.\tableGen.h	/^    int *colWidth;$/;"	m	struct:tblGenerator
+columnDefine	.\tableGen.c	/^static int columnDefine(tblGenerator *pTblGen, char **columns, int numOfColumn) {$/;"	f	file:
+columnDefine	.\tableGen.h	/^    int (*columnDefine)(struct tblGenerator *, char **columns, int numOfColumn);$/;"	m	struct:tblGenerator
+columnWidthCompute	.\tableGen.c	/^static int columnWidthCompute(int *colWidth, int totalLen, int numOfCol) {$/;"	f	file:
+columns	.\tableGen.h	/^    char **columns;$/;"	m	struct:tblGenerator
+config	.\tableGen.h	/^    int (*config)(struct tblGenerator *, TBL_OPTION option, int arg);$/;"	m	struct:tblGenerator
+current	.\tableGen.h	/^    row *current;$/;"	m	struct:tblGenerator
+elements	.\tableGen.h	/^    char **elements;$/;"	m	struct:row
+elements	.\tableGen.h	/^    row *elements;$/;"	m	struct:tblGenerator
+main	.\main.c	/^int main() {$/;"	f
+newRow	.\tableGen.c	/^static int newRow(tblGenerator *pTblGen) {$/;"	f	file:
+newRow	.\tableGen.h	/^    int (*newRow)(struct tblGenerator *);$/;"	m	struct:tblGenerator
+next	.\tableGen.h	/^    struct row *next;$/;"	m	struct:row	typeref:struct:row::row
+nextRow	.\tableGen.c	/^static row * nextRow(row *pRow) {$/;"	f	file:
+numOfColumns	.\tableGen.h	/^    int numOfColumns;$/;"	m	struct:tblGenerator
+numOfRows	.\tableGen.h	/^    int numOfRows;$/;"	m	struct:tblGenerator
+prev	.\tableGen.h	/^    struct row *prev;$/;"	m	struct:row	typeref:struct:row::row
+prevRow	.\tableGen.c	/^static row * prevRow(row *pRow) {$/;"	f	file:
+print	.\tableGen.h	/^    int (*print)(struct tblGenerator *);$/;"	m	struct:tblGenerator
+row	.\tableGen.h	/^typedef struct row {$/;"	s
+row	.\tableGen.h	/^} row;$/;"	t	typeref:struct:row
+rowAppend	.\tableGen.c	/^static int rowAppend(row *pRow, row *pNew) {$/;"	f	file:
+rowAppendWhole	.\tableGen.c	/^static int rowAppendWhole(tblGenerator *pTblGen, ...) {$/;"	f	file:
+rowAppendWhole	.\tableGen.h	/^    int (*rowAppendWhole)(struct tblGenerator *pTblGen, ...);$/;"	m	struct:tblGenerator
+rowElemAdd	.\tableGen.c	/^static int rowElemAdd(tblGenerator *pTblGen, char *elem) {$/;"	f	file:
+rowElemAdd	.\tableGen.h	/^    int (*rowElemAdd)(struct tblGenerator *, char *elem);$/;"	m	struct:tblGenerator
+rowGetElem	.\tableGen.c	/^static char * rowGetElem(row *pRow, int column) {$/;"	f	file:
+rowPrint	.\tableGen.c	/^static int rowPrint(char **rowContent, char seperator, int *colWidth, int numOfCol, int multirow) {$/;"	f	file:
+rowRelease	.\tableGen.c	/^static int rowRelease(row *pRow, int numOfColumn) {$/;"	f	file:
+rowSeperator	.\tableGen.c	/^static int rowSeperator(int *colWidth, int numOfCol, char seperator, char angle) {$/;"	f	file:
+rowSetElem	.\tableGen.c	/^static int rowSetElem(row *pRow, char *elem, int column) {$/;"	f	file:
+tableOpt	.\tableGen.c	/^} tableOpt;$/;"	t	typeref:struct:__anon1	file:
+tableWidth	.\tableGen.h	/^    int tableWidth;$/;"	m	struct:tblGenerator
+tblConfig	.\tableGen.c	/^static int tblConfig(struct tblGenerator *pTblGen, TBL_OPTION option, int arg) {$/;"	f	file:
+tblGenConstruct	.\tableGen.c	/^int tblGenConstruct(tblGenerator *pTblGen) {$/;"	f
+tblGenDestruct	.\tableGen.c	/^int tblGenDestruct(tblGenerator *pTblGen) {$/;"	f
+tblGenerator	.\tableGen.h	/^typedef struct tblGenerator {$/;"	s
+tblGenerator	.\tableGen.h	/^} tblGenerator;$/;"	t	typeref:struct:tblGenerator
+tblPrint	.\tableGen.c	/^static int tblPrint(tblGenerator *pTblGen) {$/;"	f	file:

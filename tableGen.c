@@ -202,7 +202,7 @@ static int columnWidthCompute(int *colWidth, int totalLen, int numOfCol) {
     for (length = idx = 0; idx < numOfCol; idx++) {
         temp = colWidth[idx] * ratio;
         length += temp;
-        colWidth[idx] = temp;
+        colWidth[idx] = temp < 1 ? 1 : temp;
     }
 
     return 1;
@@ -254,8 +254,8 @@ static int rowPrint(char **rowContent, char seperator, int *colWidth, int numOfC
                     flag = 0;
                 }
                 rowContent[idx][tracker[idx]] = breakBackup[idx];
-                breakBackup[idx] = rowContent[idx][colWidth[idx]];
-                rowContent[idx][colWidth[idx]] = '\0';
+                breakBackup[idx] = rowContent[idx][colWidth[idx]+tracker[idx]];
+                rowContent[idx][colWidth[idx]+tracker[idx]] = '\0';
             } else if (multirow){
                 if (tracker[idx] != tracker[idx+numOfCol])
                     rowContent[idx][tracker[idx]] = breakBackup[idx];
